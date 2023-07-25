@@ -18,8 +18,12 @@
             console.log('perdimos comunicación con el servidor')
         })
         socket.emit('mensaje', 'jhoanjimz');
-        socket.on('mensaje', function(payload) {
+        socket.on('nuevo-mensaje', function(payload) {
             console.log('Escuchando', payload)
+        })
+        socket.on('active-bands', function(bands) {
+            console.clear();
+            console.table(bands)
         })
     </script>
 </body>
