@@ -1,5 +1,3 @@
-// ignore_for_file: library_private_types_in_public_api, prefer_collection_literals
-
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
